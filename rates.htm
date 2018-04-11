@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>OBMOBT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Lato", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+#navyblue {background-color:#020422;}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-l5 w3-card w3-right w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-l5" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="services.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Services</a>
+    <a href="rates.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Rates</a>
+    <a href="supplies.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Supplies</a>
+    <a href="about.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About us</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-l5 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="services.htm" class="w3-bar-item w3-button w3-padding-large">Services</a>
+    <a href="rates.htm" class="w3-bar-item w3-button w3-padding-large">Rates</a>
+    <a href="supplies.htm" class="w3-bar-item w3-button w3-padding-large">Supplies</a>
+    <a href="about.htm" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  </div>
+</div><!-- Footer -->
+<div class="w3-container banner-main" style="padding-top:60px">
+  <p>RATES<p>
+  <p></p>
+</div>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
