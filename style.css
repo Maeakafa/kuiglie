@@ -1,3 +1,9 @@
+html, body{
+  font-family: 'Hind', sans-serif;
+   font-size: 100%;
+   background:#020422	; 
+}
+
 .banner-main {
     padding: 0em 0em;
     text-align: center;
