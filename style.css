@@ -1,8 +1,9 @@
 html, body{
   font-family: 'Hind', sans-serif;
    font-size: 100%;
-   background:#020422	; 
+   background:#000033	; 
 }
+
 
 .banner-main {
     padding: 0em 0em;
@@ -14,15 +15,17 @@ html, body{
     
     .banner-main h3 {
     font-size: 4vw;
-    color: #020422;
+    color: #000033;
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: 'Times', sans-serif;
 }
 
+
+	
 .banner-main p {
     font-size: 3vw;
-    color: #020422;
+    color: #000033;
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: 'Times', sans-serif;
@@ -31,9 +34,9 @@ html, body{
 .banner-second {
     padding: 0em 0em;
     text-align: center;
-    background:#020422;
+    background:#000033;
     width: 100%;
-    margin: 0em auto 0em
+    margin: 0em auto 0em;
     }
     
     .banner-second h3 {
@@ -43,17 +46,40 @@ html, body{
         margin: 0em 0em 0em 0em;
     font-family: Times, sans-serif;
 }
+.banner-second h4 {
+	font-size:.25vw;
+	color: #fff;
+	text-align: center;
+	font-family: Times, sans-serif;
+	text-decoration: underline;
+	margin: 0em 0em 0em 0em;
+	letter-spacing: 1vw;
+	line-height: 3.5vw;
+}
+
+.banner-second h5 {
+	font-size:6.5vw;
+	color: #fff;
+	text-align: center;
+	font-family: Times, sans-serif;
+	text-decoration: underline;
+	margin: 0em 0em 0em 0em;
+	letter-spacing: 1vw;
+	line-height: 6.5vw;
+}
+
+
 
 .banner-second p {
-    font-size: 3vw;
+    font-size: 4vw;
     color: #fff;
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: Times, sans-serif;
 }
     
-.w3-theme-l5 {color:#fff !important; background-color:#020422 !important}
-.w3-theme-l4 {color:#020422 !important; background-color:#fff !important}
+.w3-theme-l5 {color:#fff !important; background-color:#000033 !important}
+.w3-theme-l4 {color:#000033 !important; background-color:#fff !important}
 .w3-theme-l3 {color:#000 !important; background-color:#a6d4fa !important}
 .w3-theme-l2 {color:#000 !important; background-color:#79bff8 !important}
 .w3-theme-l1 {color:#fff !important; background-color:#4daaf6 !important}
