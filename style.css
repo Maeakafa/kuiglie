@@ -1,7 +1,7 @@
-html, body{
+	html, body{
   font-family: 'Hind', sans-serif;
    font-size: 100%;
-   background:#000033	; 
+   background:#fff	; 
 }
 
 
@@ -15,7 +15,7 @@ html, body{
     
     .banner-main h3 {
     font-size: 4vw;
-    color: #000033;
+    color: #fff;
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: 'Times', sans-serif;
@@ -24,31 +24,47 @@ html, body{
 
 	
 .banner-main p {
-    font-size: 3vw;
-    color: #000033;
+    font-size: 3vmin;
+    color: #fff;
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: 'Times', sans-serif;
 }
 
+.banner-first {
+    padding: 0em 0em;
+    text-align: center;
+    width: 100%;
+    margin: 0em auto 0em
+}    
+    
+    .banner-first p{
+    	font-size: 3vmin;
+    	color: #000000;
+    	text-align: center;
+    	margin: 0em 0em 0em 0em;
+    	font-family: 'Times', sans-serif;
+    	
+    }
+
 .banner-second {
     padding: 0em 0em;
     text-align: center;
-    background:#000033;
+    background:#000000;
     width: 100%;
     margin: 0em auto 0em;
     }
     
     .banner-second h3 {
     font-size: 4vw;
-    color: #fff;
+    color: #00008B;
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: Times, sans-serif;
 }
 .banner-second h4 {
 	font-size:.25vw;
-	color: #fff;
+	color: #00008B;
 	text-align: center;
 	font-family: Times, sans-serif;
 	text-decoration: underline;
@@ -59,7 +75,7 @@ html, body{
 
 .banner-second h5 {
 	font-size:6.5vw;
-	color: #fff;
+	color: #00008B;
 	text-align: center;
 	font-family: Times, sans-serif;
 	text-decoration: underline;
@@ -67,19 +83,24 @@ html, body{
 	letter-spacing: 1vw;
 	line-height: 6.5vw;
 }
-
-
+.banner-second h6 {
+    font-size: 3vmin;
+    color: #00008B;
+    text-align: center;
+        margin: 0em 0em 0em 0em;
+    font-family: Times, sans-serif;
+}
 
 .banner-second p {
-    font-size: 4vw;
-    color: #fff;
+    font-size: 4vmin;
+    color: #00008B;
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: Times, sans-serif;
 }
     
-.w3-theme-l5 {color:#fff !important; background-color:#000033 !important}
-.w3-theme-l4 {color:#000033 !important; background-color:#fff !important}
+.w3-theme-l5 {color:#00008B !important; background-color:#fff !important}
+.w3-theme-l4 {color:#fff !important; background-color:#00008B !important}
 .w3-theme-l3 {color:#000 !important; background-color:#a6d4fa !important}
 .w3-theme-l2 {color:#000 !important; background-color:#79bff8 !important}
 .w3-theme-l1 {color:#fff !important; background-color:#4daaf6 !important}
