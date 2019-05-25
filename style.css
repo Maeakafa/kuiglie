@@ -1,14 +1,14 @@
 	html, body{
   font-family: 'Hind', sans-serif;
    font-size: 100%;
-   background:#fff	; 
+   background:#00008B	; 
 }
 
 
 .banner-main {
     padding: 0em 0em;
     text-align: center;
-    background:#fff;
+    background:#00008B;
     width: 100%;
     margin: 0em auto 0em
     }
@@ -50,7 +50,7 @@
 .banner-second {
     padding: 0em 0em;
     text-align: center;
-    background:#000000;
+    background:#fff;
     width: 100%;
     margin: 0em auto 0em;
     }
