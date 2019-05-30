@@ -41,6 +41,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <p></p>
 </div>
 
+<div class="w3-bar w3-theme-l4">
+  <button class="w3-bar-item w3-button w3-white w3-round-xxlarge" onclick="openCity('LSA')">Local Service Areas</button>
+  <button class="w3-bar-item w3-button w3-white w3-round-xxlarge" onclick="openCity('Moving')">Moving</</button>
+  <button class="w3-bar-item w3-button w3-white w3-round-xxlarge" onclick="openCity('Packing')">Packing</button>
+</div>
+
+<div id="LSA" class="w3-container service">
+  <h2>Local Service Area</h2>
+  <p>Map of "Local Service Areas"</p>
+</div>
+
+<div id="Moving" class="w3-container service" style="display:none">
+  <h2>Moving Services</h2>
+  <p>Description of Moving our Moving Services here</p> 
+</div>
+
+<div id="Packing" class="w3-container service" style="display:none">
+<h2>Packing Servies</h2>
+  <p>Our Packing Service and info on how to pack.</p>
+</div>
+
 <div class="w3-container banner-main w3-bottom w3-theme-l4" style="padding-top:0px">
   <p>Quesions? Contact us: (415)821-9697</p>
   <p></p>
@@ -54,6 +75,15 @@ function myFunction() {
     } else { 
         x.className = x.className.replace(" w3-show", "");
     }
+}
+
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("service");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
 }
 </script>
 </body>
