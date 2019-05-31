@@ -41,27 +41,70 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <p></p>
 </div>
 
-<div class="w3-bar w3-theme-l4">
-  <button class="w3-bar-item w3-button w3-white w3-round-xxlarge" onclick="openCity('LSA')">Service Area</button>
-  <button class="w3-bar-item w3-button w3-white w3-round-xxlarge" onclick="openCity('Moving')">Moving</</button>
-  <button class="w3-bar-item w3-button w3-white w3-round-xxlarge" onclick="openCity('Packing')">Packing</button>
+<div class="w3-bar w3-theme-l5">
+  <button class="w3-bar-item w3-button w3-border w3-round-xlarge" onclick="openCity('LSA')">Service Area</button>
+  <button class="w3-bar-item w3-button w3-border w3-round-xlarge" onclick="openCity('Moving')">Moving</</button>
+  <button class="w3-bar-item w3-button w3-border w3-round-xlarge" onclick="openCity('Packing')">Packing</button>
 </div>
 
-<div id="LSA" class="w3-container service">
-  <h2>Our Service Areas</h2>
-  <p>Map of "Local Service Areas"</p>
+<div id="LSA" class="w3-container service w3-theme-l5 w3-center">
+  <h5>Our Local Service Areas</h5>
   		<div class="w3-container">
   				<img src="images/LSA.jpg" style="min-width:30%; max-width: 50%">
   		</div>
+  		<div>
+  				<div class="w3-row w3-margin-top">
+					<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-yellow banner-secondc">
+      					<h5>San Francisco Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Birsbane, Colma, Daly City, San Francisco, & South San Francisco</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-red banner-secondc">
+      					<h5>Marin Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Belvedere, Corte Madera, Fairfax,
+									Greenbrae, Larkspur, Marin City, 
+									Mill Valley, Ross, San Anselmo,
+									San Rafael, Sausalito & Tiburon</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-purple banner-secondc">
+      					<h5>East Bay Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Alameda, Albany, Berkeley,
+									Emeryville & Oakland
+								</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-green banner-secondc">
+      					<h5>San Mateo Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Belmont, Burlingame, Foster City,
+									Hillsborough, Millbrae, San Bruno, 
+									San Carlos & San Mateo
+								</p>
+    						</div>
+    				</div>
+  				</div>   
+  		</div>
 </div>
 
-<div id="Moving" class="w3-container service" style="display:none">
-  <h2>Moving Services</h2>
+<div id="Moving" class="w3-container service w3-theme-l5 banner-second" style="display:none">
+  <h5>Moving Services</h5>
   <p>Description of Moving our Moving Services here</p> 
 </div>
 
-<div id="Packing" class="w3-container service" style="display:none">
-<h2>Packing Servies</h2>
+<div id="Packing" class="w3-container service w3-theme-l5 banner-second" style="display:none">
+<h5>Packing Servies</h5>
   <p>Our Packing Service and info on how to pack.</p>
 </div>
 

@@ -1,8 +1,7 @@
 	html, body{
   font-family: 'Hind', sans-serif;
    font-size: 100%;
-   background:#fff	;
- 
+   background:#fff	; 
 }
 
 
@@ -150,6 +149,59 @@
     text-align: center;
         margin: 0em 0em 0em 0em;
     font-family: Times, sans-serif;
+}
+
+.banner-secondc {
+    padding: 0em 0em;
+    text-align: center;
+    background:#fff;
+    width: 100%;
+    margin: 0em auto 0em;
+    }
+    
+    .banner-secondc h3 {
+    font-size: 3vmin;
+    color: #000;
+    text-align: center;
+        margin: 0em 0em 0em 0em;
+    font-family: Times, sans-serif;
+}
+.banner-secondc h4 {
+	font-size:4vmin;
+	color: #000;
+	text-align: center;
+	font-family: Times, sans-serif;
+	margin: 0em 0em 0em 0em;
+	letter-spacing: 1vw;
+	line-height: 3.5vw;
+}
+
+.banner-secondc h5 {
+	font-size:1em;
+	color: #000;
+	text-align: center;
+	font-family: Times, sans-serif;
+	margin: 0em 0em 0em 0em;
+}
+.banner-secondc h6 {
+    font-size: 6vmin;
+    color: #000;
+    text-align: center;
+        margin: 0em 0em 0em 0em;
+    font-family: Times, sans-serif;
+}
+
+.banner-secondc p {
+    font-size: .8em;
+    color: #000;
+    text-align: center;
+        margin: 0em 0em 0em 0em;
+    font-family: Times, sans-serif;
+}
+
+ul {
+  background: #00008b;
+  padding: 20px;
 }
     
 .w3-theme-l5 {color:#00008B !important; background-color:#fff !important}
