@@ -203,6 +203,22 @@ ul {
   background: #00008b;
   padding: 20px;
 }
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #00008B;
+   border-bottom: 2px solid #aaaaaa;
+}
     
 .w3-theme-l5 {color:#00008B !important; background-color:#fff !important}
 .w3-theme-l4 {color:#fff !important; background-color:#00008B !important}
