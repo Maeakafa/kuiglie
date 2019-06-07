@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>OBMOBT</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
+<link rel="stylesheet" href="style.css">
 <style>
-h1,{font-family: "Lato", sans-serif}
-
+body,h1,h2,h3,h4,h5 {font-family: "Hind", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
 <body>
 
-<!-- Navbar -->
-<div class="w3-cointainer">
-  <div class="w3-bar w3-theme-l5 w3-card w3-right w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-l5" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-center w3-padding-large">Home</a>
-    <a href="services.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Services</a>
-    <a href="rates.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Rates</a>
-    <a href="supplies.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Supplies</a>
-    <a href="about.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About us</a>
-  </div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-border w3-theme-l4 w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:18px">Hide Menu</a>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-hide w3-theme-l5 w3-large w3-border">
-    <a href="services.htm" class="w3-bar-item w3-button w3-padding-large">Services</a>
-    <a href="rates.htm" class="w3-bar-item w3-button w3-padding-large">Rates</a>
-    <a href="supplies.htm" class="w3-bar-item w3-button w3-padding-large">Supplies</a>
-    <a href="about.htm" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#rates" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rates</a> 
+    <a href="#supplies" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Supplies</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
-</div>
+</nav>
 
-<!-- Header -->
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme-l4 w3-large w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme-l5 w3-margin-right" onclick="w3_open()">☰</a>
+  <span>OBM & OBT</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px;margin-right:40px">
+
+  <!-- Header -->
+  <hr>
 <div class="w3-container w3-theme-l5 banner-second" style="padding-top: 60px;">
 <p>Moving Made Easy Since 1983.</p>
 </div>
 <div class="w3-container w3-theme-l5 banner-second" style= "max-width: 60%" >
 	
-	<img src="images/banner3b.jpg" style="width:100%">
+	
 </div>
 
-<div class="w3-container w3-theme-l5 banner-second" style="padding-top: 0px" >
+<div class="w3-container w3-theme-l5 banner-second" style="" >
+     <img src="images/banner3b.jpg" style="max-width:50%"> 
 	<h5><b>ONE BIG MAN & </b></h5>
 	<h5><b>ONE BIG TRUCK</b></h5>
 	<h5><b>MOVING CO.INC</b></h5>
@@ -55,22 +61,307 @@ h1,{font-family: "Lato", sans-serif}
     <h3>Contact Information</h3>
         <p>Email: <a href="mailto:info@onebigman.com">info@onebigman.com</a></p>
         <p>(415)821-9697</p>
+		<hr>
 </div>
 
+  
 
+  <!-- Services -->
 
+    <div class="w3-container" id="services" style="margin-top:75px">
+      <h1 class="w3-xlarge w3-theme-l5"><b>Services</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>We’re proud of the reputation we have earned. Our goal is to change the perception of the moving industry through honesty, simplicity, and hard work. Thanks to people like you it seems to be working.</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-theme-l4 w3-large w3-padding-28">We specialize in</li>
+        <li class="w3-padding-16">1,2, & 3 Bedroom Apartments/Houses</li>
+        <li class="w3-padding-16">Roommates & Studios</li>
+        <li class="w3-padding-16">Small Offices</li>
+        <li class="w3-padding-16">Loading and unloading rental trucks</li>
+        <li class="w3-padding-16">Preparing and placing items into storage</li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-theme-l4 w3-large w3-padding-28">Our service includes</li>
+        <li class="w3-padding-16">A confirmation sheet with your rates, and the date and time your move is scheduled.</li>
+        <li class="w3-padding-16">A confirmation call four days before your move date to answer any last minute questions.</li>
+        <li class="w3-padding-16">A follow-up phone call after your move to make sure everything went well.</li>
+        <li class="w3-padding-16">A clean 26 foot, 24 foot, 18 foot, 16 foot truck, or cargo van</li>
+        <li class="w3-padding-16">50 quilted moving pads and plastic wrap for your furniture</li>
+
+      </ul>
+    </div>
+ 
+
+    <div class="w3-container service w3-theme-l5 w3-center">
+  
+  		<div class="w3-container">
+				<p><b>Our Local Service Areas</b></p>
+  				<img src="images/LSA.jpg" style="min-width:30%; max-width: 45%">
+  		</div>
+  		<div>
+  				<div class="w3-row w3-margin-top">
+					<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-yellow banner-secondc">
+      					<h5>San Francisco Area</h5>
+    					</header>
+							<div class="w3-container">
+      						<p>Birsbane, Colma, Daly City, San Francisco, & South San Francisco</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-red banner-secondc">
+      					<h5>Marin Area</h5>
+    					</header>
+							<div class="w3-container">
+      						<p>Belvedere, Corte Madera, Fairfax,
+									Greenbrae, Larkspur, Marin City, 
+									Mill Valley, Ross, San Anselmo,
+									San Rafael, Sausalito & Tiburon</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-purple banner-secondc">
+      					<h5>East Bay Area</h5>
+    					</header>
+							<div class="w3-container">
+      						<p>Alameda, Albany, Berkeley,
+									Emeryville & Oakland
+								</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-green banner-secondc">
+      					<h5>San Mateo Area</h5>
+    					</header>
+							<div class="w3-container">
+      						<p>Belmont, Burlingame, Foster City,
+									Hillsborough, Millbrae, San Bruno, 
+									San Carlos & San Mateo
+								</p>
+    						</div>
+    				</div>
+  				</div>   
+  		</div>
+</div>
+<hr>
+  <!-- Rates -->
+  <div class="w3-container" id="rates" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-theme-l5"><b>Rates</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+<div class="w3-container w3-theme-l5 w3-center">
+  <p><u><b>Moving &/or Packing Rates</b></u></p>
+  <p>Our rates are as follows:</p>
+
+  <table class="w3-table w3-bordered w3-border">
+    <tr>
+      <th># of crew members</th>
+      <th>$ per hour</th>
+      <th>Base fee</th>
+    </tr>
+    <tr>
+      <td>2 Person</td>
+      <td>$150/hr</td>
+      <td>$100*</td>
+    </tr>
+    <tr>
+      <td>3 Person</td>
+      <td>$225/hr</td>
+      <td>$150*</td>
+    </tr>
+
+  </table>
+</div>
+
+<div class="w3-panel w3-border w3-light-grey w3-theme-l5 w3-round-large w3-center">
+		<h6>* Base fee can vary depending on distance moved</h6>
+		<h6>- $75 per person per hour</h6>
+		<h6>- We bill in 15 minute increments with no minimum time</h6>
+		<h6>- Same rates apply for packing in addition to supply costs</h6>
+		<h6>- Overtime charges apply after 5 PM</h6>
+</div>
+<div class="w3-panel w3-theme-l4 banner-secondb w3-align-center w3-topbar w3-bottombar w3-border-light-grey banner-first">
+<p><b>FOR EXAMPLE:</b></p>
+<p>Move Only: hours x rate + base fee = Total Bill</p>
+<p>Pack & Move: hours x rate + base fee +supplies = Total Bill </p>
+</div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <p class="w3-opacity">What is the Base Fee?</p>
+          <p>This one-time set-up fee helps to 
+             defray the cost of getting the crew from our office
+             to the job site and back afterward.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <p class="w3-opacity">When does time start and stop?</p>
+          <p><u>Within a "Local Service Area"</u><br>
+
+				Time starts when the crew arrives at the first location.
+				Time stops when the truck is unloaded at the final location.<br>
+
+				<u>Moves starting outside of a "Local Service Area"</u><br>
+				Time starts when we leave the "Local Service Area" your move was scheduled in.<br>
+
+				<u>Moves ending outside of a "Local Service Area"</u><br>
+				Time stops when we return to the "Local Service Area" your move was scheduled in.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <p class="w3-opacity">What form of payments do we accept?</p>
+          <p>We accept: Cash and Major Credit Cards (VISA, MasterCard & American Express).
+			 No checks please!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Supplies -->
+  <div class="w3-container" id="supplies" style="margin-top:75px">
+      <h1 class="w3-xlarge w3-theme-l5"><b>Supplies</b></h1>
+      <hr style="width:50px;border:5px solid gray" class="w3-round">
+	  
+	  <div class="w3-container w3-theme-l5 banner-second">
+  <p>Free delivery w/purchase > $100</p>
+
+  <table class="w3-table w3-bordered w3-border" style="padding-bottom: 0px">
+    <tr>
+      <th>Packing Material</th>
+      <th>$/unit</th>
+    </tr>
+    <tr>
+      <td>Small Box(1.5 cu. ft.)</td>
+      <td>$2/box</td>
+    </tr>
+    <tr>
+      <td>Medium Box(3.0 cu. ft.)</td>
+      <td>$4/box</td>
+    </tr>
+    <tr>
+      <td>Universal Mirror Pack(large)</td>
+      <td>$6/box</td>
+    </tr>
+    <tr>
+      <td>Unprinted Newspaper</td>
+      <td>$15/box(10 pounds)</td>
+    </tr>
+    <tr>
+      <td>Glass kit(12 pieces)</td>
+      <td>$10/kit</td>
+    </tr>
+    <tr>
+      <td>Small Bubble Wrap(24"x30')</td>
+      <td>$10/pack</td>
+    </tr>
+    <tr>
+      <td>Large Bubble Wrap(24"x10')</td>
+      <td>$10/pack</td>
+    </tr>
+    <tr>
+      <td>Mattress cover(king or queen)</td>
+      <td>$10/bag</td>
+    </tr>
+    <tr>
+      <td>Tape Dispenser</td>
+      <td>$15/each</td>
+      <tr>
+      <td>Tape(2"x55')</td>
+      <td>$1/roll</td>	
+    </tr>
+    </tr>
+</table>
+</div>
+
+<div class="w3-container w3-theme-l5 banner-second">
+  <p>If we are loading your truck...</p>
+
+  <table class="w3-table w3-bordered w3-border">
+    <tr>
+      <th>Packing Material</th>
+      <th>$/unit</th>
+    </tr>
+    <tr>
+      <td>Wardrobe Box kit(20"wide)</td>
+      <td>$15/box</td>
+    </tr>
+    <tr>
+      <td>Blanket(Heavy Duty)</td>
+      <td>$24/blanket</td>
+    </tr>
+    <tr>
+      <td>Tie down straps(2"x100')</td>
+      <td>$32/roll</td>
+    </tr>
+    
+  </table>
+</div>
+    </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-theme-l5"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>Fill out the details below and we can get back to you regarding appointment availability.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-theme-l4 w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-8" style="margin-top:75px;padding-right:58px"><p class="w3-right">Built by Maeakafa McOmber using: <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
 }
 </script>
 
 </body>
 </html>
+

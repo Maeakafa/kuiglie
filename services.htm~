@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>OBMOBT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Lato", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+#navyblue {background-color:#020422;}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-container">
+  <div class="w3-bar w3-theme-l5 w3-card w3-right w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-l5" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="services.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Services</a>
+    <a href="rates.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Rates</a>
+    <a href="supplies.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Supplies</a>
+    <a href="about.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About us</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-l5 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="services.htm" class="w3-bar-item w3-button w3-padding-large">Services</a>
+    <a href="rates.htm" class="w3-bar-item w3-button w3-padding-large">Rates</a>
+    <a href="supplies.htm" class="w3-bar-item w3-button w3-padding-large">Supplies</a>
+    <a href="about.htm" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+  </div>
+</div><!-- Footer -->
+
+
+<div class="w3-bar w3-theme-l5">
+  <button class="w3-bar-item w3-button w3-border w3-round-xlarge" onclick="openCity('LSA')">Service Area</button>
+  <button class="w3-bar-item w3-button w3-border w3-round-xlarge" onclick="openCity('Moving')">Moving</</button>
+  <button class="w3-bar-item w3-button w3-border w3-round-xlarge" onclick="openCity('Packing')">Packing</button>
+</div>
+
+<div id="LSA" class="w3-container service w3-theme-l5 w3-center">
+  <h5>Our Local Service Areas</h5>
+  		<div class="w3-container">
+  				<img src="images/LSA.jpg" style="min-width:30%; max-width: 50%">
+  		</div>
+  		<div>
+  				<div class="w3-row w3-margin-top">
+					<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-yellow banner-secondc">
+      					<h5>San Francisco Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Birsbane, Colma, Daly City, San Francisco, & South San Francisco</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-red banner-secondc">
+      					<h5>Marin Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Belvedere, Corte Madera, Fairfax,
+									Greenbrae, Larkspur, Marin City, 
+									Mill Valley, Ross, San Anselmo,
+									San Rafael, Sausalito & Tiburon</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-purple banner-secondc">
+      					<h5>East Bay Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Alameda, Albany, Berkeley,
+									Emeryville & Oakland
+								</p>
+    						</div>
+    				</div>
+    				<div class="w3-quarter w3-card-4" style="50%">
+						<header class="w3-container w3-green banner-secondc">
+      					<h5>San Mateo Area</h5>
+    					</header>
+							<div class="w3-container banner-secondc">
+      						<p>Belmont, Burlingame, Foster City,
+									Hillsborough, Millbrae, San Bruno, 
+									San Carlos & San Mateo
+								</p>
+    						</div>
+    				</div>
+  				</div>   
+  		</div>
+</div>
+<hr>
+
+<div id="Moving" class="w3-container service w3-theme-l5 banner-second" style="display:none">
+  <h5>Moving Services</h5>
+  <p>Description of Moving our Moving Services here</p> 
+</div>
+
+<div id="Packing" class="w3-container service w3-theme-l5 banner-second" style="display:none">
+<h5>Packing Servies</h5>
+  <p>Our Packing Service and info on how to pack.</p>
+</div>
+
+<div class="w3-container banner-main w3-bottom w3-theme-l4" style="padding-top:0px">
+  <p>Quesions? Contact us: (415)821-9697</p>
+  <p></p>
+</div>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("service");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+</body>
+</html>
