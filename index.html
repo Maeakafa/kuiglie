@@ -196,7 +196,7 @@ body {font-size:16px;}
   <div class="w3-row-padding w3-theme-l2">
     <div class="w3-col m3 w3-margin-bottom">
       <div class="w3-theme-l2">
-        <div class="w3-container">
+      <div c  <div class="w3-container">
           <p class="w3-opacity"><b>What is the Base Fee?</b></p>
           <p>This one-time set-up fee helps to 
              defray the cost of getting the crew from our office
@@ -311,7 +311,80 @@ body {font-size:16px;}
     
   </table>
 </div>
+ <!-- Packing Tips --> 
+<div class="w3-container w3-center w3-theme-l5">
+
+<p><b>Packing Tips</b></p>
+<p></p>
+
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-theme-l2 w3-center">Click here to expand packing tips</button>
+<div id="Demo1" class="w3-container w3-hide">
+     
+     <div class="w3-row-padding w3-theme-l2">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-theme-l2">
+      <div c  <div class="w3-container">
+          <p class="w3-opacity"><b>Packing it right</b></p>
+          <p>Packing can be less stressful if some simple directions are followed. 
+             Start packing early, pack a little each day, and pack one room at a time.
+             It is also important to purchase the right packing materials.<br><br>
+             We suggest that you buy uniform-sized boxes from a packing store. 
+             Supermarket or liquor store boxes tend to crush easily.  
+             A packing store will also be able to supply you with the other materials you'll need.
+			 </p>
+             
+        </div>
+      </div>
     </div>
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-theme-l2">
+        <div class="w3-container">
+          <p class="w3-opacity"><b>Packing Fundamentals</b></p>
+          <p>Clear a table for a work area and have available several rolls of tape, a pair of scissors, 
+          unprinted paper, labels, boxes, bubble wrap and a bathroom scale to weigh boxes.<br><br>
+
+			Tape boxes on both the top and bottom in cross-like fashion for maximum strength.<br><br>
+
+         Label the side of each box.  Mark the contents and the room where you want the box placed in your new home.  
+         Write "fragile" on the box, if applicable.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-theme-l2 w3-center">
+        <li class="w3-theme-l4 w3-large w3-padding-28">Things you will need</li>
+        <li class="w3-padding-16">Small (16" x 12" x 12") for heavy items such as books and records.</li>
+        <li class="w3-padding-16">Medium (18" x 18" x 16") for kitchen equipment</li>
+        <li class="w3-padding-16">Mirror Pack (for mirrors or framed art)</li>
+        <li class="w3-padding-16">Plain paper (newsprint can smear)</li>
+        <li class="w3-padding-16">Bubble wrap or cushioning material</li>
+        <li class="w3-padding-16">Marking Pens</li>
+        <li class="w3-padding-16">Large heavy duty garbage bags</li>
+      </ul>
+    </div> 
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-theme-l2 w3-center">
+        <li class="w3-theme-l4 w3-large w3-padding-28">Packing individual items</li>
+        <li class="w3-padding-16"><b>China and Glassware</b>- Line the bottom of the box with crumpled newsprint,
+        										 wrap each item individually with bubble wrap or paper, and leave enough room
+        										 at the top of the box for more crumpled newsprint.</li>
+        <li class="w3-padding-16"><b>Pictures and Mirrors</b>- Pack in special mirror cartons or wrap in bubble wrap 
+        										and pack in sturdy boxes lined with newsprint.</li>
+        <li class="w3-padding-16"><b>Lamps</b>- Separate lamp shades and pack alone in a box, bubble wrap the base.</li>
+        <li class="w3-padding-16"><b>Linens, Pillows, and folded clothes</b>-Use heavey duty plastic trash bags.</li>
+        <li class="w3-padding-16"><b>Bureau Items</b>-Empty drawers, Don't tape drawers shut it can ruin the varnish.</li>
+        <li class="w3-padding-16"><b>Books, Files, and Records</b>- Empty Bookcases or filing cabinets into small boxes</li>
+        <li class="w3-padding-16"><b>Plants</b>- Stop watering plants a few days before your move and wrap plastic bags around the base.</li>
+        <li class="w3-padding-16"><b>Barbeques</b>-Make sure all ash and oil are cleaned out.</li>
+
+      </ul>
+    </div>
+
+</div>
+</div>
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
@@ -359,6 +432,15 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+// collapse tab
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
 
